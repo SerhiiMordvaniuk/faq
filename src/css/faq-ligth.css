@@ -138,7 +138,7 @@ font-family: var(--second-family);
 
 /* Зміна іконок */
 .ac.is-active> .close-icon {
-  transform: rotate(180deg);
+  transform: rotateX(180deg);
 }
 
 
