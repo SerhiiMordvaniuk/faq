@@ -42,14 +42,10 @@ font-family: var(--second-family);
 .close-icon {
   position: absolute;
   right: 15px;
+  transition: all 750ms;
 }
 
-.open-icon
-{
-position: absolute;
-right: 15px;
-display: none;
-}
+
 
 .ac:last-child{
   border-bottom: 1px solid #eee;
@@ -142,11 +138,9 @@ display: none;
 
 /* Зміна іконок */
 .ac.is-active> .close-icon {
-  display: none;
+  transform: rotate(180deg);
 }
-.ac.is-active> .open-icon {
-  display: block;
-}
+
 
 /* -----ACCORDION------- */
 

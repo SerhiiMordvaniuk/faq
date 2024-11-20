@@ -7,7 +7,6 @@ new Accordion('.accordion-container', {
   showMultiple: false,
     openOnInit: [0],
   onOpen: function(currentElement) {
-    console.log(currentElement);
     },
   
 });
