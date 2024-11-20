@@ -14,19 +14,23 @@ new Accordion('.accordion-container', {
 
 const btn = document.querySelector(".btn");
 
-const theme = document.querySelector("#theme");
 
 btn.addEventListener("click", () => {
+  const theme = document.querySelector("#theme");
   
-  if (theme.getAttribute("href") === "/css/light-styles.css") {
-    theme.href = "/css/dark.css";
-    localStorage.setItem("theme", "/css/dark-styles.css")
+  if (theme.getAttribute("href") === "./css/light-styles.css") {
+    darkTheme()
   }
   else {
-    theme.href = "/css/light-styles.css"
-    localStorage.setItem("theme", "/css/light-styles.css")
-
+    lightTheme()
   }
-
 }
 )
+
+function darkTheme() {
+  theme.href = "./css/dark.css";
+}
+
+function lightTheme() {
+  theme.href = "./css/light-styles.css";
+}
