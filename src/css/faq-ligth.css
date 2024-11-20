@@ -2,3 +2,208 @@
   max-width: 360px;
   min-width: 320px;
 }
+
+.faq {
+  padding: 40px 20px;
+  position: relative;
+}
+
+.faq-title{
+font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 52px;
+  line-height: 123%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin-bottom: 40px;
+}
+
+.faq-title-span{
+  color: var(--accet-green);
+}
+
+.faq-decor{
+  width: 526px;
+  height: 408px;
+  display: none;
+}
+/* -----ACCORDION------- */
+
+.ac {
+  border-top: 1px solid #eee;
+  background-color: #fff;
+  box-sizing: border-box;
+  padding: 28px 24px;
+  transition: all 750ms ;
+  position: relative;
+}
+/* іконка */
+.close-icon {
+  position: absolute;
+  right: 15px;
+}
+
+.open-icon
+{
+position: absolute;
+right: 15px;
+display: none;
+}
+
+.ac:last-child{
+  border-bottom: 1px solid #eee;
+}
+
+.ac .ac-header {
+  margin: 0;
+  padding: 0
+}
+
+/* Заголовок */
+.ac .ac-trigger {
+  /* max-width: 224px; */
+  font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--black);
+    text-align: left;
+    width: 100%;
+    display: block;
+  cursor: pointer;
+  background-color: transparent;
+  transition: color .25s ease;
+  position: relative;
+  text-decoration: none;
+  margin: 0;
+  margin-bottom: 24px;
+  border: 0;
+  padding: 0;
+  padding-right:72px;
+}
+
+/* Хрекстик */
+.ac .ac-trigger::after {
+  content: "";
+  text-align: center;
+  width: 15px;
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  /* виставити висоту */
+
+}
+
+.ac .ac-trigger:focus {
+  color: var(--black);
+}
+
+.ac .ac-panel {
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease
+}
+
+/* Текст  */
+.ac .ac-panel .ac-text {
+  width: 272px;
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  color: var(--black);
+}
+
+.ac.js-enabled .ac-panel {
+  visibility: hidden;
+}
+
+.ac.is-active .ac-panel {
+  visibility: visible;
+}
+.ac.is-active{
+  /* зміна кольору фону картки при відкриті */
+  background: var(--light-accent);
+  border-radius: 16px;
+  border: none;
+} 
+
+
+.ac.is-active>.ac-header .ac-trigger::after {
+  content: "";
+}
+
+
+/* Зміна іконок */
+.ac.is-active> .close-icon {
+  display: none;
+}
+.ac.is-active> .open-icon {
+  display: block;
+}
+
+/* -----ACCORDION------- */
+
+
+
+/* ------TAB------ */
+@media (min-width: 768px) {
+  .faq-container {
+      max-width: 768px;
+    }
+
+  .faq {
+    padding-left: 32px;
+  }
+
+  .faq-title {
+        font-weight: 400;
+        font-size: 108px;
+        line-height: 115%;
+        letter-spacing: 0.02em;
+  }
+
+  .ac .ac-trigger {
+      font-style: 20px;
+      line-height: 160%;
+  }
+
+  .ac .ac-panel .ac-text{
+    width: fit-content;
+  }
+}
+
+
+
+/* ------DESC------ */
+@media (min-width: 1280px) {
+  .faq-container {
+      max-width: 1280px;
+    }
+
+    .faq-title {
+      width: 520px;
+    }
+
+    .faq-decor-accordion{
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      position: relative;
+      bottom: 140px;
+    }
+        .faq-decor {
+          display: block;
+          
+        }
+
+        .ac {
+          width: 592px;
+        }
+}
