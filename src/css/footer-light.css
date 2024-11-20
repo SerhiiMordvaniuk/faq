@@ -1,0 +1,122 @@
+.footer-container {
+  max-width: 360px;
+  min-width: 320px;
+  border-top: 1px solid var(--light-grey);
+
+}
+
+.footer {
+  padding: 40px 20px;
+}
+
+
+
+.footer-logo {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--black);
+  margin: 0;
+  margin-bottom: 32px;
+  max-width: 233px;
+}
+
+.footer-logo-span {
+  color: var(--accet-green);
+}
+
+.footer-link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+
+.footer-link {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+}
+
+
+.copyright {
+  display: flex;
+  justify-content: center;
+}
+
+.copyright-txt {
+  font-family: var(--font-family);
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: var(--black);
+  width: 180px;
+}
+
+/* -----TAB-------- */
+@media (min-width: 768px) {
+
+  .footer-container {
+    max-width: 768px;
+  }
+
+  .footer {
+    padding: 40px 32px 24px;
+  }
+
+  .footer-logo-container {
+    margin-bottom: 40px;
+  }
+
+  .footer-link-list {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+  }
+
+  .copyright {
+    padding: 0;
+    justify-content: end;
+  }
+
+  .copyright-txt {
+    width: 330px;
+    left: 0;
+  }
+
+  /* ЗУпинився тут, потрібно змістити копірайт іправо */
+
+}
+
+/* -----TAB-------- */
+
+/* -----DESK-------- */
+
+@media (min-width: 1280px) {
+
+  .footer-container {
+    max-width: 1280px;
+  }
+
+  .footer-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    margin: 0;
+  }
+
+  .footer-link-list {
+    padding: 0;
+    margin: 0;
+  }
+}
