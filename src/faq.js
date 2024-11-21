@@ -28,7 +28,7 @@ btn.addEventListener("click", () => {
 )
 
 function darkTheme() {
-  theme.href = "/css/dark.css";
+  theme.href = "/faq/assets/index-Dvl09eJE.css";
 }
 
 function lightTheme() {
