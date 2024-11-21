@@ -42,13 +42,13 @@ font-family: var(--second-family);
 /* іконка */
 .close-icon {
   position: absolute;
-  right: 15px;
+  right: 28px;
   transition: all 250ms;
 }
 
 .open-icon {
   position: absolute;
-  right: 15px;
+  right: 28px;
   transition: all 250ms;
   display: none;
 }
@@ -83,24 +83,9 @@ font-family: var(--second-family);
   position: relative;
   text-decoration: none;
   margin: 0;
-  margin-bottom: 24px;
   border: 0;
   padding: 0;
   padding-right:72px;
-}
-
-/* Хрекстик */
-.ac .ac-trigger::after {
-  content: "";
-  text-align: center;
-  width: 15px;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  position: absolute;
-  right: 10px;
-  top: 10px;
-  /* виставити висоту */
-
 }
 
 .ac .ac-trigger:focus {
@@ -136,8 +121,20 @@ font-family: var(--second-family);
   background: var(--light-accent);
   border-radius: 16px;
   border: none;
+  
 } 
 
+.ac.is-active {
+  border: none;
+}
+
+.ac.is-active + .ac{
+  border-top: none;
+}
+
+.ac.is-active .ac-trigger{
+  margin-bottom: 24px;
+}
 
 .ac.is-active>.ac-header .ac-trigger::after {
   content: "";
@@ -201,7 +198,7 @@ font-family: var(--second-family);
   .faq-title-decor{
     display: flex;
     flex-direction: column;
-    gap: 240px;
+    gap: 200px;
   }
 
 
@@ -211,8 +208,16 @@ font-family: var(--second-family);
 
   .accordion-container{
     position: relative;
-    top: 250px;
+    top: 276px;
   }
+
+    .close-icon {
+      right: 32px;
+    }
+  
+    .open-icon {
+      right: 32px;
+    }
 
   .ac {
     width: 592px;
