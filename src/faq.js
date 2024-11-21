@@ -12,29 +12,38 @@ new Accordion('.accordion-container', {
 });
 
 
+// const btn = document.querySelector(".btn");
+
+
+// btn.addEventListener("click", () => {
+//   const theme = document.querySelector(".tututu");
+  
+//   if (theme.getAttribute("href") === "/css/light-styles.css") {
+//     darkTheme()
+//   }
+//   else {
+//     lightTheme()
+//   }
+// }
+// )
+
+// function darkTheme() {
+//   theme.href = "/css/dark.css";
+// }
+
+// function lightTheme() {
+//   theme.href = "/css/light-styles.css";
+// }
+
+// document.addEventListener("", () => {
+  
+// })
+
+
 const btn = document.querySelector(".btn");
 
 
 btn.addEventListener("click", () => {
-  const theme = document.querySelector(".tututu");
-  
-  if (theme.getAttribute("href") === "/css/light-styles.css") {
-    darkTheme()
-  }
-  else {
-    lightTheme()
-  }
+  document.body.classList.add("darkstyle")
 }
 )
-
-function darkTheme() {
-  theme.href = "/css/dark.css";
-}
-
-function lightTheme() {
-  theme.href = "/css/light-styles.css";
-}
-
-document.addEventListener("", () => {
-  
-})

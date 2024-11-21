@@ -55,10 +55,19 @@ img {
   --dark-accet-dt: #204136;
   --hover-green-dt: #009156;
   --error: #e74a3b;
+  --bg-color: #fff;
 }
 
 :root {
   --font-family: "Poppins", sans-serif;
   --second-family: "Impact", sans-serif;
   --third-family: "Montserrat", sans-serif;
+}
+
+.darkstyle{
+  --bg-color:#1e2023
+}
+
+body {
+  background-color: var(--bg-color);
 }
