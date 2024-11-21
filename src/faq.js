@@ -18,7 +18,7 @@ const btn = document.querySelector(".btn");
 btn.addEventListener("click", () => {
   const theme = document.querySelector("#theme");
   
-  if (theme.getAttribute("href") === "/css/light-styles.css") {
+  if (theme.getAttribute("href") === "/faq/assets/index-CFAPyUDg.css") {
     darkTheme()
   }
   else {
@@ -32,9 +32,6 @@ function darkTheme() {
 }
 
 function lightTheme() {
-  theme.href = "/css/light-styles.css";
+  theme.href = "/faq/assets/index-CFAPyUDg.css";
 }
 
-document.addEventListener("", () => {
-  
-})
