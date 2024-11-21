@@ -32,7 +32,7 @@ font-family: var(--second-family);
 
 .ac {
   border-top: 1px solid #eee;
-  background-color: #fff;
+  background-color: transparent;
   box-sizing: border-box;
   padding: 28px 24px;
   transition: all 750ms ;

@@ -44,8 +44,12 @@ const btn = document.querySelector(".btn");
 
 
 btn.addEventListener("click", () => {
-  console.log("lalala");
-  
-  document.body.classList.add("darkstyle")
+  if (document.body.classList.contains("darkstyle")) {
+    document.body.classList.remove("darkstyle")
+  }
+  else {
+    document.body.classList.add("darkstyle")
+  }
+
 }
 )
