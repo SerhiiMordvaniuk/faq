@@ -44,6 +44,8 @@ const btn = document.querySelector(".btn");
 
 
 btn.addEventListener("click", () => {
+  console.log("lalala");
+  
   document.body.classList.add("darkstyle")
 }
 )
