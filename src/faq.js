@@ -18,7 +18,7 @@ const btn = document.querySelector(".btn");
 btn.addEventListener("click", () => {
   const theme = document.querySelector("#theme");
   
-  if (theme.getAttribute("href") === "./css/light-styles.css") {
+  if (theme.getAttribute("href") === "/css/light-styles.css") {
     darkTheme()
   }
   else {
@@ -28,11 +28,11 @@ btn.addEventListener("click", () => {
 )
 
 function darkTheme() {
-  theme.href = "./css/dark.css";
+  theme.href = "/css/dark.css";
 }
 
 function lightTheme() {
-  theme.href = "./css/light-styles.css";
+  theme.href = "/css/light-styles.css";
 }
 
 document.addEventListener("", () => {
