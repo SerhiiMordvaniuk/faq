@@ -34,3 +34,7 @@ function darkTheme() {
 function lightTheme() {
   theme.href = "./css/light-styles.css";
 }
+
+document.addEventListener("", () => {
+  
+})

@@ -37,12 +37,20 @@ font-family: var(--second-family);
   padding: 28px 24px;
   transition: all 750ms ;
   position: relative;
+  transition: all 1000ms ease;
 }
 /* іконка */
 .close-icon {
   position: absolute;
   right: 15px;
-  transition: all 750ms;
+  transition: all 250ms;
+}
+
+.open-icon {
+  position: absolute;
+  right: 15px;
+  transition: all 250ms;
+  display: none;
 }
 
 
@@ -178,26 +186,35 @@ font-family: var(--second-family);
 /* ------DESC------ */
 @media (min-width: 1280px) {
   .faq-container {
-      max-width: 1280px;
+    max-width: 1280px;
+  }
+
+  .faq{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .faq-title {
+    width: 520px;
+  }
+
+  .faq-title-decor{
+    display: flex;
+    flex-direction: column;
+    gap: 240px;
+  }
+
+
+  .faq-decor {
+    display: block;
     }
 
-    .faq-title {
-      width: 520px;
-    }
+  .accordion-container{
+    position: relative;
+    top: 250px;
+  }
 
-    .faq-decor-accordion{
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-      position: relative;
-      bottom: 140px;
-    }
-        .faq-decor {
-          display: block;
-          
-        }
-
-        .ac {
-          width: 592px;
-        }
+  .ac {
+    width: 592px;
+  }
 }
