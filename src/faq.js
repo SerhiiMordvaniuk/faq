@@ -16,9 +16,9 @@ const btn = document.querySelector(".btn");
 
 
 btn.addEventListener("click", () => {
-  const theme = document.querySelector("#theme");
+  const theme = document.querySelector(".tututu");
   
-  if (theme.getAttribute("href") === "/faq/assets/index-CFAPyUDg.css") {
+  if (theme.getAttribute("href") === "/css/light-styles.css") {
     darkTheme()
   }
   else {
@@ -28,10 +28,13 @@ btn.addEventListener("click", () => {
 )
 
 function darkTheme() {
-  theme.href = "/faq/assets/index-Dvl09eJE.css";
+  theme.href = "/css/dark.css";
 }
 
 function lightTheme() {
-  theme.href = "/faq/assets/index-CFAPyUDg.css";
+  theme.href = "/css/light-styles.css";
 }
 
+document.addEventListener("", () => {
+  
+})
