@@ -37,6 +37,8 @@ font-family: var(--second-family);
 }
 /* -----ACCORDION------- */
 
+
+
 .ac {
   border-top: 1px solid #eee;
   background-color: transparent;
@@ -216,6 +218,7 @@ font-family: var(--second-family);
   .accordion-container{
     position: relative;
     top: 276px;
+    max-height: 744px;
   }
 
     .close-icon {
@@ -230,3 +233,7 @@ font-family: var(--second-family);
     width: 592px;
   }
 }
+
+
+
+ 
